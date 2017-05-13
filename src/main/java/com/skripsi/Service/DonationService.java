@@ -32,4 +32,8 @@ public class DonationService {
     public DonationEntity save(DonationEntity donation){
         return donationRepository.save(donation);
     }
+
+    public List<DonationEntity> delete(int id){
+        return donationRepository.deleteById(id);
+    }
 }

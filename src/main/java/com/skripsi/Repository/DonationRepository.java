@@ -16,6 +16,7 @@ import java.util.List;
 public interface DonationRepository extends CrudRepository<DonationEntity, Integer> {
     DonationEntity findById(int id);
     List<DonationEntity> findBypId(int p_id);
+    List<DonationEntity> deleteById(int id);
 
     @Query(value = "Select sum(amount) from donation where p_id = :p_id",
             nativeQuery = true)

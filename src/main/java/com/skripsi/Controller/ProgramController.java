@@ -46,7 +46,7 @@ public class ProgramController {
         ProgramEntity hasil = programService.save(program);
 
         if(hasil == null){
-            return new Wrapper(501, "Gagal menyimpan program baru", null);
+            return new Wrapper(501, "Gagal memperbaharui program", null);
         }
         return new Wrapper(200, "Program berhasil diperbaharui", program);
     }
