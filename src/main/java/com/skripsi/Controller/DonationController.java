@@ -64,10 +64,10 @@ public class DonationController {
 
     @RequestMapping(path = "/delete", method = RequestMethod.POST)
     public Wrapper delete(@RequestParam("id") int id){
-        List<DonationEntity> hasil = donationService.delete(id);
-        if(hasil == null){
+        int result = donationService.delete(id);
+        if (result == 0){
             return new Wrapper(501, "Gagal menghapus program", null);
         }
-        return new Wrapper(200, "Berhasil menghapus program", hasil);
+        return new Wrapper(200, "Berhasil menghapus program", result);
     }
 }

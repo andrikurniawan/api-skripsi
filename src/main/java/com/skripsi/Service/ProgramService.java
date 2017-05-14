@@ -25,7 +25,7 @@ public class ProgramService {
         return programRepository.save(program);
     }
 
-    public List<ProgramEntity> delete(int id){
+    public int delete(int id){
         return programRepository.deleteById(id);
     }
 }

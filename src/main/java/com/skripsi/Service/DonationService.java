@@ -33,7 +33,7 @@ public class DonationService {
         return donationRepository.save(donation);
     }
 
-    public List<DonationEntity> delete(int id){
+    public int delete(int id){
         return donationRepository.deleteById(id);
     }
 }
