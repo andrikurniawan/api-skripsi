@@ -1,0 +1,17 @@
+{
+  "name": "api-skripsi",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
